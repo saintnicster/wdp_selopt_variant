@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>ZIF_WDC__VARIANT_HELPER</CLSNAME>
+    <VERSION>1</VERSION>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Interface to allow custom permissions and actions</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_WDC__VARIANT_HELPER</CLSNAME>
+     <CMPNAME>BEFORE_DISPLAY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Provide a list of variants, see if you want to do anything</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_WDC__VARIANT_HELPER</CLSNAME>
+     <CMPNAME>POST_SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Hook after a variant save happens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_WDC__VARIANT_HELPER</CLSNAME>
+     <CMPNAME>USER_CAN_CREATE_GLBL_VARIANTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Can user create/modify global variants?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_WDC__VARIANT_HELPER</CLSNAME>
+     <CMPNAME>USER_CAN_CREATE_SELF_VARIANTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Can user create variants, or only be able to see globals?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_WDC__VARIANT_HELPER</CLSNAME>
+     <CMPNAME>VARAINTS_ENABLED_FOR_USER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Should user be able to see variants at all?</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

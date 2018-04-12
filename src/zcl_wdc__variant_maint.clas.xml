@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_WDC__VARIANT_MAINT</CLSNAME>
+    <VERSION>1</VERSION>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Assistance Class for Y_WDC_VARIANT.</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>B01</KEY>
+     <ENTRY>Set as Default</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B02</KEY>
+     <ENTRY>Remove Default</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E01</KEY>
+     <ENTRY>Variant save not allowed - no field data present</ENTRY>
+     <LENGTH>96</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E02</KEY>
+     <ENTRY>Nothing selected</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E03</KEY>
+     <ENTRY>Not allowed to delete variant</ENTRY>
+     <LENGTH>58</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E04</KEY>
+     <ENTRY>Variant &amp;PARA1&amp; not found for current user</ENTRY>
+     <LENGTH>72</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>GLO</KEY>
+     <ENTRY>-- [Global]</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>I01</KEY>
+     <ENTRY>Saving a copy - user cannot create global variants</ENTRY>
+     <LENGTH>112</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L01</KEY>
+     <ENTRY>Is Global?</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L02</KEY>
+     <ENTRY>Save</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L03</KEY>
+     <ENTRY>Cancel</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L04</KEY>
+     <ENTRY>Date</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L05</KEY>
+     <ENTRY>Restrictions</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L06</KEY>
+     <ENTRY>Dynamic date type</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L07</KEY>
+     <ENTRY>Value 1</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L08</KEY>
+     <ENTRY>Value 2</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L09</KEY>
+     <ENTRY>All Users?</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>Q01</KEY>
+     <ENTRY>Are you sure that you want to delete global variant &amp;PARA1&amp; ?</ENTRY>
+     <LENGTH>110</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>Q02</KEY>
+     <ENTRY>Are you sure that you want to delete variant &amp;PARA1&amp; ?</ENTRY>
+     <LENGTH>96</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>Q03</KEY>
+     <ENTRY>Global variant &amp;PARA1&amp; already exists.</ENTRY>
+     <LENGTH>64</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>Q04</KEY>
+     <ENTRY>Variant &amp;PARA1&amp; already exists.</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>Q05</KEY>
+     <ENTRY>Do you wish to overwrite?</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T01</KEY>
+     <ENTRY>Manage Variants</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T02</KEY>
+     <ENTRY>Save Variant</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T03</KEY>
+     <ENTRY>Confirm Variant Delete</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T04</KEY>
+     <ENTRY>Confirm Overwrite</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T05</KEY>
+     <ENTRY>Set Dynamic Date</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT_MAINT</CLSNAME>
+     <CMPNAME>CHECK_EXISTANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>pre-save, key already exists? is it the loaded variant</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT_MAINT</CLSNAME>
+     <CMPNAME>CLEAR_VARIANT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Clear current variant from memory</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT_MAINT</CLSNAME>
+     <CMPNAME>DELETE_CURRENT_DEFAULT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Clear the current variant for this component</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT_MAINT</CLSNAME>
+     <CMPNAME>DELETE_VARIANT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Pull selected variant from DB, then load into SELOPTs</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT_MAINT</CLSNAME>
+     <CMPNAME>GO_CURRENT_VARIANT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Current variant shown on screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT_MAINT</CLSNAME>
+     <CMPNAME>GO_SEL_HELPER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Public Interface for Select Options</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT_MAINT</CLSNAME>
+     <CMPNAME>GO_VARIANT_HELPER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Interface to allow custom permissions and actions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT_MAINT</CLSNAME>
+     <CMPNAME>GS_VARIANT_KEY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>key structure for variants</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT_MAINT</CLSNAME>
+     <CMPNAME>LOAD_VARIANT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Pull selected variant from DB, then load into SELOPTs</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT_MAINT</CLSNAME>
+     <CMPNAME>POPULATE_DYN_DATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Run logic to do the dynamic dates</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT_MAINT</CLSNAME>
+     <CMPNAME>PULL_SELECT_OPTION_TEXTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Pull display text for selection screen items</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT_MAINT</CLSNAME>
+     <CMPNAME>PULL_VARIANT_LIST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Pull full list of variants for the user, pass to UI</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT_MAINT</CLSNAME>
+     <CMPNAME>SAVE_VARIANT_TO_DB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Save variant information to db</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT_MAINT</CLSNAME>
+     <CMPNAME>SET_VARIANT_HELPER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Pass reference to permissions class</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT_MAINT</CLSNAME>
+     <CMPNAME>TRANSFORM_SCREEN_TO_DB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Pull information from select helper into dynamic struct</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT_MAINT</CLSNAME>
+     <CMPNAME>USER_CAN_CREATE_GLBL_VARIANTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Can user create variants for other people?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT_MAINT</CLSNAME>
+     <CMPNAME>USER_CAN_CREATE_SELF_VARIANTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Can user create and update variants</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT_MAINT</CLSNAME>
+     <CMPNAME>VARAINTS_ENABLED_FOR_USER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Can the user use variants?</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
