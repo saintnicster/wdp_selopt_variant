@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_WDC__VARIANT</CLSNAME>
+    <VERSION>1</VERSION>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Web Dynpro Variant</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSFINAL>X</CLSFINAL>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>S01</KEY>
+     <ENTRY>Default Variant Cleared</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S02</KEY>
+     <ENTRY>Default Variant Created</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT</CLSNAME>
+     <CMPNAME>CHECK_EXISTENCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Query DB to see if key is already in use</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT</CLSNAME>
+     <CMPNAME>C_ALL_USERS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>User Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT</CLSNAME>
+     <CMPNAME>DEFAULT_SET</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set the default variant for a user</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT</CLSNAME>
+     <CMPNAME>DELETE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Remove the variant (and fields) from the DB</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT</CLSNAME>
+     <CMPNAME>GET_HEADER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Pull header information from member variable</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT</CLSNAME>
+     <CMPNAME>GET_VARIANT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Detailed variant information</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT</CLSNAME>
+     <CMPNAME>GET_VARIANT_FIELDS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Pull and decompress variant field information</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT</CLSNAME>
+     <CMPNAME>GET_VARIANT_LIST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>List of variant visible to supplied user</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT</CLSNAME>
+     <CMPNAME>GS_VARIANT_HD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>WDA SelOpt Variant Storage table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT</CLSNAME>
+     <CMPNAME>IS_GLOBAL_VARIANT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Can this variant be used by many people?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT</CLSNAME>
+     <CMPNAME>SAVE_TO_DB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Write variant information to the database</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__VARIANT</CLSNAME>
+     <CMPNAME>SET_DESCRIPTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Update descrption for variant</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

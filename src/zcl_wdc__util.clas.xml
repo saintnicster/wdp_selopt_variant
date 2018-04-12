@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_WDC__UTIL</CLSNAME>
+    <VERSION>1</VERSION>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Web dynpro utilities</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <RELEASE>1</RELEASE>
+    <CLSFINAL>X</CLSFINAL>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <RSTAT>K</RSTAT>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__UTIL</CLSNAME>
+     <CMPNAME>DISABLED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Disabled, visible</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__UTIL</CLSNAME>
+     <CMPNAME>ENABLED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Enabled, visible</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__UTIL</CLSNAME>
+     <CMPNAME>GET_GUI_PROPERTY_FOR_ELEMENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns GUI property for single UI element</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__UTIL</CLSNAME>
+     <CMPNAME>GUI_PROP_FILL_TABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns a table of attributes and their GUI properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__UTIL</CLSNAME>
+     <CMPNAME>GUI_PROP_GET_ATTR_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Private method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__UTIL</CLSNAME>
+     <CMPNAME>GUI_PROP_READ_TABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Reads a table of attributes and their GUI properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__UTIL</CLSNAME>
+     <CMPNAME>GUI_PROP_SET_ALL_ATTR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set all attributes to a particular value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__UTIL</CLSNAME>
+     <CMPNAME>GUI_PROP_SET_TO_READONLY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Change initial, visible and enabled to read only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__UTIL</CLSNAME>
+     <CMPNAME>INVISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Invisible</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__UTIL</CLSNAME>
+     <CMPNAME>READONLY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read-only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__UTIL</CLSNAME>
+     <CMPNAME>REQUIRED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Required</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__UTIL</CLSNAME>
+     <CMPNAME>REQUIRED_READONLY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Required, read-only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WDC__UTIL</CLSNAME>
+     <CMPNAME>SET_READ_ONLY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Recurses through all UI elements and sets to read only</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
